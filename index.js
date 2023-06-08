@@ -21,7 +21,6 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
     let res;
 
-    // rock
     if (/rock/i.test(playerSelection)) {
         // execute
         switch (computerSelection) {
