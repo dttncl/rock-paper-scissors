@@ -128,3 +128,7 @@ footer {
 footer > p {
     margin: 0;
 }
+
+footer img {
+    height: 1.5rem;
+}
