@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-* {
-    color: black;
-}
-
 body {
     font-family: 'Indie Flower', cursive;
     font-size: 10px;
     margin: 0;
+    color: black;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 h1 {
@@ -169,5 +167,4 @@ footer img {
     box-shadow: 4px 8px black;
     border-radius: 10px;
     padding: 10px 20px;
-    color: #000000;
 }
