@@ -132,3 +132,30 @@ footer > p {
 footer img {
     height: 1.5rem;
 }
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.reset > button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 4px 8px white;
+    cursor: pointer;
+}
+
+.reset > button {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+    border: solid 5px black;
+    box-shadow: 4px 8px black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+}

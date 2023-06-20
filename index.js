@@ -6,6 +6,8 @@ const rock = document.querySelector('#machine-rock');
 const paper = document.querySelector('#machine-paper');
 const scissors = document.querySelector('#machine-scissors');
 
+const reset = document.querySelector('#reset-game');
+
 let humanScore = 0;
 let machineScore = 0;
 
@@ -103,3 +105,11 @@ buttons.forEach(btn => {
         machine.textContent = machineScore;
     })
 });
+
+reset.addEventListener('click', () => {
+    humanScore = machineScore = 0;
+    human.textContent = humanScore;
+    machine.textContent = machineScore;
+
+    console.log('game is reset')
+})
