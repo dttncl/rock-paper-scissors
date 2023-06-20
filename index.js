@@ -7,6 +7,7 @@ const paper = document.querySelector('#machine-paper');
 const scissors = document.querySelector('#machine-scissors');
 
 const reset = document.querySelector('#reset-game');
+const comment = document.querySelector('#comment');
 
 let humanScore = 0;
 let machineScore = 0;
@@ -94,15 +95,21 @@ buttons.forEach(btn => {
         let playerSelection = btn.value;
         let computerSelection = getComputerChoice();
         let result = playRound(playerSelection, computerSelection);
+        let decision = '';
 
         if (result === 'human') {
             humanScore++;
+            decision += `you win!`;
         } else if (result === 'machine') {
             machineScore++;
+            decision += `you lose!`;
+        } else {
+            decision += `It's a tie!`;
         }
 
         human.textContent = humanScore;
         machine.textContent = machineScore;
+        comment.textContent = decision;
     })
 });
 
@@ -110,6 +117,11 @@ reset.addEventListener('click', () => {
     humanScore = machineScore = 0;
     human.textContent = humanScore;
     machine.textContent = machineScore;
+    comment.textContent = 'vs';
+
+    paper.classList.remove('machine');
+    rock.classList.remove('machine');
+    scissors.classList.remove('machine');
 
     console.log('game is reset')
 })

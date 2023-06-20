@@ -106,7 +106,8 @@ button {
 }
 
 .vs {
-    font-size: 5rem;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .game {
@@ -114,6 +115,10 @@ button {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.game > div {
+    width: 15vw;
 }
 
 footer {
